@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: the-libs
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: root
+    password: root
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.H2Dialect
+
+server:
+  port: 8080
