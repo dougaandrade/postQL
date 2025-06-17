@@ -7,7 +7,8 @@ Projeto simples para mostrar o uso de GraphQL com Spring Boot usando Postgres.
 - Java 17+
 - Maven 3+
 - IDE (IntelliJ, VSCode, Eclipse...)
-- Scalar
+- DBeaver
+- Docker Compose
 
 ## Rodando a aplicação ⚙️
 
