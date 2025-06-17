@@ -18,13 +18,52 @@ Projeto simples para mostrar o uso de GraphQL com Spring Boot usando banco em me
 
 ## Exemplos de uso ⌨️
 
-### Query para pegar todos os livros
+### Query para pegar todos os post's
 
 ```graphql
 query {
-  allBooks {
+   allPosts {
     id
     title
-    author
+    content
   }
 }
+```
+### Query para criar o post
+```graphql
+mutation {
+  createPost(post: {
+    title: "Primeiro post",
+    content: "Esse é o conteúdo do primeiro post"
+  }) {
+    id
+    title
+    content
+  }
+}
+```
+### Query para pegar buscar post pelo ID
+```graphql
+query {
+  postById(id: 2) {
+    id
+    title
+    content
+  }
+}
+```
+### Query para atualizar post por ID
+```graphql
+mutation {
+  updatePost(id: 10, post: {
+    title: "Título Atualiz"
+    content: "Conteúdo atualizado com sucesso"
+  }) {
+    id
+    title
+    content
+  }
+}
+
+
+
