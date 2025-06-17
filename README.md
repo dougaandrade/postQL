@@ -1,6 +1,6 @@
-# Spring Boot + GraphQL - Biblioteca Simples 📚
+# Spring Boot + GraphQL - Post Simples 📚
 
-Projeto simples para mostrar o uso de GraphQL com Spring Boot usando banco em memória H2.
+Projeto simples para mostrar o uso de GraphQL com Spring Boot usando Postgres.
 
 ## Requisitos 📋
 
@@ -19,7 +19,7 @@ Projeto simples para mostrar o uso de GraphQL com Spring Boot usando banco em me
 ## Exemplos de uso ⌨️
 
 ### Query para pegar todos os post's
-
+   
 ```graphql
 query {
    allPosts {
@@ -29,6 +29,7 @@ query {
   }
 }
 ```
+
 ### Query para criar o post
 ```graphql
 mutation {
@@ -42,6 +43,7 @@ mutation {
   }
 }
 ```
+   
 ### Query para pegar buscar post pelo ID
 ```graphql
 query {
@@ -52,6 +54,7 @@ query {
   }
 }
 ```
+   
 ### Query para atualizar post por ID
 ```graphql
 mutation {
@@ -64,6 +67,5 @@ mutation {
     content
   }
 }
-
-
+```
 
