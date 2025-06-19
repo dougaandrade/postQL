@@ -60,7 +60,7 @@ query {
 ```graphql
 mutation {
   updatePost(id: 10, post: {
-    title: "Título Atualiz"
+    title: "Título Atualizado"
     content: "Conteúdo atualizado com sucesso"
   }) {
     id
